@@ -1,0 +1,18 @@
+<nav>
+  <%= link_to root_path, class: "logo" do %>
+    <%= image_tag "lg.png", alt: "Logo" %>
+  <% end %>
+
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <ul>
+    <li><a href="/">Accueil</a></li>
+    <li><a href="https://hassy.onrender.com" target="_blank">Portfolio</a></li>
+    <li><a href="/contact">About</a></li>
+  </ul>
+</nav>

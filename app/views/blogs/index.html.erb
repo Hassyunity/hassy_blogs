@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚀 Mon Portfolio est en ligne !</title>
+  <%= stylesheet_link_tag 'coming-soon', media: 'all' %>
+  <%= stylesheet_link_tag 'menu', media: 'all' %>
+</head>
+<body>
+  <header>
+     <%= render 'partials/menu' %>
+  </header>
+
+  <main class="container">
+  <div class="main-content">
+    <section class="description">
+      <%= @content_html %>
+    </section>
+
+    <section class="comments-form">
+      <h2>Laissez un commentaire 📝</h2>
+      <%= form_with model: Comment.new, url: comments_path, local: true do |f| %>
+        <div>
+          <%= f.label :name, "Votre nom" %><br>
+          <%= f.text_field :name, required: true %>
+        </div>
+        <div>
+          <%= f.label :content, "Votre commentaire" %><br>
+          <%= f.text_area :content, rows: 4, required: true %>
+        </div>
+        <div>
+          <%= f.submit "Envoyer" %>
+        </div>
+      <% end %>
+    </section>
+
+    <section class="comments-list">
+      <h2>Commentaires récents 🗨️</h2>
+      <% @comments.each do |comment| %>
+        <div class="comment">
+          <strong><%= comment.name %></strong>
+          <small><%= comment.created_at.strftime("%d %B %Y à %H:%M") %></small>
+          <p><%= comment.content %></p>
+        </div>
+      <% end %>
+    </section>
+
+    <section class="retour">
+      <a href="/">← Retour à l’accueil</a>
+    </section>
+  </div>
+    <%= render 'partials/footer' %>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+header {
+  background-color: #f0f4f8;
+  color: black;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: gray;
+  color: black;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Style pour le lien contenant le logo */
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Menu principal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-right: 4rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #00d6b4;
+}
+
+/* Checkbox cachée pour le toggle */
+#menu-toggle {
+  display: none;
+}
+
+/* Style burger */
+.burger {
+  display: none; /* caché par défaut */
+  flex-direction: column;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Affiche burger */
+  .burger {
+    display: flex;
+  }
+
+  .logo img {
+    display: block;
+  }
+
+  /* Cache menu */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 0 10px;
+    margin-right: 0;
+    z-index: 1000;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+
+  /* Affiche le menu quand checkbox est cochée */
+  #menu-toggle:checked + .burger + ul {
+    display: flex;
+  }
+}

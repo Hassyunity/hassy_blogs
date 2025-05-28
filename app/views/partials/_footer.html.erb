@@ -1,0 +1,58 @@
+<footer class="footer-inside">
+  <div class="footer-left">
+    <p class="vibes">Blog</p>
+    <p>by Hassy Tsihoarana.</p>
+  </div>
+  <div class="footer-right">
+    <p>📞 Phone: +261 34 16 020 73</p>
+    <p>✉️ Email: hassy.tsihoarana@gmail.com</p>
+    <p>🏠 Address: Antananarivo, Madagascar</p>
+  </div>
+</footer>
+
+<style>
+.footer-inside {
+  margin-top: auto;
+  padding: 30px 20px;
+  
+  color: #00d6b4;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  border-top: 2px solid #00d6b4;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 250px;
+}
+
+.footer-inside p {
+  margin: 5px 0;
+}
+
+.vibes {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inside {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+}
+
