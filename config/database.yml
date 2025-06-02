@@ -20,8 +20,3 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
-
-  # Action Cable support (si nécessaire)
-  cable:
-    <<: *default
-    url: <%= ENV["DATABASE_URL"] %>
