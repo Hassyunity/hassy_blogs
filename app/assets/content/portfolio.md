@@ -4,60 +4,77 @@
 
 ---
 
-En me demandant souvent « Qui es-tu ? » 🤔, « Parle-moi de toi » 🗣️ ou encore « Qu’as-tu fait de passionnant ? » 🎯,  
-après plusieurs versions, plusieurs inspirations et beaucoup de changements de projets,  
-c’est avec fierté que je vous annonce mon portfolio nommé **“portfolio-version-final-real-final”** (hahaha 😅).
+On nous demande souvent : « Qui on-es ? » 🤔, « Parle-moi de toi » 🗣️ ou encore « Qu’as-tu fait de passionnant ? » 🎯  
+Après plusieurs versions, diverses inspirations et beaucoup de changements de projets,  
+c’est avec fierté que je vous annonce la mise en ligne de mon portfolio, nommé **“portfolio-version-final-real-final”** (hahaha 😅).
 
-Dans ce blog, je vais vous partager mon processus de réalisation de ce portfolio ainsi que son objectif.
-
-
-Après plusieurs versions, j’ai décidé de le créer avec **Node.js** et son framework **Express.js**.  
-Le choix de ce langage est simple : c’est pour maîtriser une autre technologie tout en créant une réelle plateforme utilitaire.  
-Au cours de la conception, j’ai pu bien comprendre la structure et l’écosystème de Node.js. 🌐⚙️
-
-### Vision de ce portfolio 👀
-
-Premièrement, comme toute structure dont je me suis inspiré concernant cette plateforme,  
-j’ai mis en avant mes projets personnels ainsi que ceux auxquels j’ai participé en entreprise durant mes trois années d’expérience,  
-suivis d’une section sur mes compétences actuelles, et enfin une section contact. ✨
-
-Deuxièmement, j’ai mis en place une page **roadmap** 🛣️ pour voir ensemble mes progrès dans le monde de l’IA 🤖 et du développement web 🌍.  
-Cette page est conçue pour avoir une visibilité de ce que j’ai accompli ou de ce que je cherche à accomplir.  
-Je l’ai aussi faite pour moi-même, afin de ne pas utiliser d’autres outils de gestion de suivi,  
-et d’éviter de me retrouver avec plusieurs plateformes que je finirais par oublier (huhu 😄).
-
-Enfin, mon but est que ce portfolio soit un écosystème complet de relation entre vous et moi,  
-dans une version plus poussée et réelle. 💡
-
-### Conception technique 🛠️
-
-Conçu avec le framework **Express** et avec du **CSS pur** pour le style, ainsi que des animations **JavaScript**,  
-je suis plutôt satisfait.  
-Pourquoi n’ai-je pas utilisé Tailwind ou Bootstrap ?  
-Simplement parce que je veux maîtriser tout l’écosystème de mon portfolio,  
-donc j’ai évité, par choix, d’utiliser autant que possible des bibliothèques déjà toutes faites. 🎯📚
-
-### Ce que j’ai intégré dans ce portfolio 📦
-
-- Un système d’envoi de mails pour me contacter, utilisant un token sécurisé à partir de mon mail personnel. 📧🔒  
-- Une intégration de **Google Analytics** pour suivre mes visiteurs et maîtriser cet outil. 📊👀
-
-### Déploiement 🚀
-
-J’ai déployé sur **Render**.  
-Pourquoi Render ?  
-Parce que c’est gratuit et tout à fait suffisant pour l’instant,  
-comparé à Railway où j’ai vite épuisé le quota gratuit à force de déploiements fréquents (exemples : « mise à jour CSS », « réorganisation des fichiers »...).
+Dans ce blog, je vais vous partager le processus de création de ce portfolio ainsi que son objectif.
 
 ---
 
-En conclusion, même si c’est un simple portfolio,
-cela m’a beaucoup appris en le développant,
-et cela m’a renforcé. 💪✨
+## ⚙️ Choix technologique
 
-Maintenant, la dernière question est pour vous :  
-Pourquoi ne pas l’avoir fait avec des CMS ou des templates déjà prêts ? 🤷‍♂️🧐
+Après plusieurs essais, j’ai décidé de le créer avec **Node.js** et son framework **Express.js**.  
+Le choix de cette technologie est simple : je voulais maîtriser un autre environnement tout en créant une vraie plateforme utile.  
+Au cours de la conception, j’ai pu bien comprendre la structure et l’écosystème de Node.js. 🌐⚙️
+
+---
+
+## 👀 Vision de ce portfolio
+
+Premièrement, comme toute structure dont je me suis inspiré pour cette plateforme,  
+j’ai mis en avant mes projets personnels ainsi que ceux réalisés en entreprise durant mes trois années d’expérience,  
+suivis d’une section dédiée à mes compétences actuelles, et enfin une section de contact. ✨
+
+Deuxièmement, j’ai mis en place une page **roadmap** 🛣️ pour suivre mes progrès dans le domaine de l’IA 🤖 et du développement web 🌍.  
+Cette page a été conçue pour offrir une vision claire de ce que j’ai accompli et de ce que je souhaite accomplir.  
+Je l’ai aussi pensée pour moi-même, afin d’éviter d’utiliser d’autres outils de gestion de suivi,  
+et de ne pas me retrouver éparpillé sur plusieurs plateformes que je finirais par oublier (huhu 😄).
+
+Enfin, mon but est que ce portfolio devienne un écosystème complet d’interaction entre vous et moi,  
+dans une version plus poussée et concrète. 💡
+
+---
+
+## 🛠️ Conception technique
+
+Conçu avec le framework **Express** et du **CSS pur** pour le style, accompagné d’animations en **JavaScript**,  
+je suis plutôt satisfait du résultat.
+
+**Pourquoi ne pas avoir utilisé Tailwind ou Bootstrap ?**  
+Tout simplement parce que je voulais maîtriser entièrement l’écosystème de mon portfolio,  
+et j’ai donc choisi d’éviter, autant que possible, l’usage de bibliothèques toutes faites. 🎯📚
+
+---
+
+## 📦 Ce que j’ai intégré dans ce portfolio
+
+- Un système d’envoi de mails pour me contacter, utilisant un token sécurisé basé sur mon adresse personnelle. 📧🔒  
+- L’intégration de **Google Analytics** pour suivre les visites et apprendre à utiliser cet outil. 📊👀  
+- Une configuration de **cron job** avec token pour éviter que mon portfolio ne se mette en veille en l’absence de visiteurs. ⏰🚫
+
+---
+
+## 🚀 Déploiement
+
+J’ai déployé le projet sur **Render**.  
+**Pourquoi Render ?**  
+Parce que c’est gratuit et amplement suffisant pour le moment,  
+contrairement à Railway, où j’ai rapidement épuisé le quota gratuit à force de déploiements fréquents  
+(par exemple : « mise à jour CSS », « réorganisation des fichiers »...).
+
+---
+
+## 🧠 Conclusion
+
+Même si ce n’est “qu’un” simple portfolio,  
+il m’a énormément appris pendant son développement,  
+et il m’a permis de me renforcer techniquement et mentalement. 💪✨
+
+Et maintenant, la dernière question est pour vous :  
+**Pourquoi ne pas l’avoir fait avec un CMS ou un template tout prêt ?** 🤷‍♂️🧐
 
 Je vous attends dans les commentaires.  
-C’était Hassy, votre codeur passionné, merci pour votre temps. 🙏👨‍💻  
-À la prochaine ! 👋🚀
+C’était **Hassy**, votre codeur passionné.  
+Merci pour votre temps. 🙏👨‍💻  
+**À la prochaine !** 👋🚀
