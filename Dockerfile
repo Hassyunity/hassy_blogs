@@ -35,6 +35,7 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libpq-dev libyaml-dev pkg-config && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+# Install gems
 COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
@@ -43,8 +44,11 @@ RUN bundle install && \
 # Copy application code
 COPY . .
 
-# Precompile bootsnap only (PAS les assets ici pour éviter d'exposer SECRET_KEY_BASE)
+# Precompile bootsnap
 RUN bundle exec bootsnap precompile app/ lib/
+
+# ✅ Precompile assets (utilise une dummy clé juste pour la compilation)
+RUN SECRET_KEY_BASE=dummy RAILS_ENV=production bundle exec rails assets:precompile
 
 # =============================
 # FINAL IMAGE
