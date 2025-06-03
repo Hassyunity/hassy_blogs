@@ -67,5 +67,5 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 # Port exposé
 EXPOSE 80
 
-# Démarrage du serveur
-CMD ["./bin/thrust", "./bin/rails", "server", "-b", "0.0.0.0", "-p", "${PORT}"]
+# Démarrage du serveur (avec interprétation de $PORT)
+CMD ["sh", "-c", "./bin/rails server -b 0.0.0.0 -p $PORT"]
